@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday My Love</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom right, #fffaf0, #fdf5e6);
+      color: #5a4a42;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .photo {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #c0a060;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2rem;
+      width: 85%;
+      max-width: 600px;
+      line-height: 1.6;
+      margin-top: 15px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    .fade-in {
+      animation: fadeIn 2s ease forwards;
+    }
+    @keyframes fall {
+      0% {transform: translateY(-10%) rotate(0deg); opacity: 1;}
+      100% {transform: translateY(110vh) rotate(360deg); opacity: 0;}
+    }
+    .petal {
+      position: fixed;
+      top: -10%;
+      width: 15px;
+      height: 15px;
+      background: rgba(255, 223, 186, 0.7);
+      border-radius: 50%;
+      animation: fall linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <audio id="music" autoplay loop>
+  <source src="Payung Teduh - Akad Lirik (Clear Audio).mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+</audio>
+
+  <section>
+    <div class="photo fade-in">
+      <img src="WhatsApp Image 2025-10-31 at 03.50.52.jpeg" alt="photo1">
+    </div>
+    <h1 class="fade-in">Happy Birthday, Babe 💛</h1>
+    <p class="fade-in">Happy Birthday my world! You make every day brighter and my heart lighter. Makasih ya udah selalu jadi calm, joy, dan alasan aku senyum tiap hari. 
+Hari ini khusus buat kamu, tapi honestly every day feels like a celebration with you. Every little moment bareng kamu, dari ketawa random sampai ngobrol nggak jelas, 
+selalu bikin aku ngerasa beruntung banget. You’re my favorite person, my home, and the reason I keep smiling. Semoga ulang tahunmu kali ini dipenuhi tawa, pelukan dan semua hal manis yang kamu suka. Love you more than words can ever say!.</p>
+  </section>
+
+  <section>
+    <div class="photo fade-in">
+      <img src="WhatsApp Image 2025-10-31 at 03.50.51 (1).jpeg" alt="photo2">
+    </div>
+    <p class="fade-in">When I hold your hand, I feel the world stop for a while. Rasanya semua masalah hilang, dan cuma ada kamu sama aku. 
+Every little thing you do makes me fall for you even more — dari senyum manismu sampe cara kamu ketawa. 
+Hari ini ulang tahunmu, dan aku cuma pengen kamu tau betapa berharganya kamu buat aku. 
+You make my days brighter, my heart lighter, dan hidup aku jadi lebih seru karena kamu. 
+Semoga hari-harimu ke depan selalu penuh tawa, kebahagiaan, dan semua hal yang bikin kamu tersenyum. 
+I loveeee uuu, nowwww n foreverrr.</p>
+  </section>
+
+  <section>
+    <div class="photo fade-in">
+      <img src="WhatsApp Image 2025-10-31 at 03.50.51.jpeg" alt="photo3">
+    </div>
+    <p class="fade-in">Every smile of yours makes my heart melt. On your birthday, I just want you to know — kamu dicintai lebih dari kata-kata yang bisa diungkapkan. 
+Setiap tawa dan senyummu bikin hari-hariku terasa lebih hangat dan hidup. Aku bersyukur banget bisa ngelewatin momen-momen kecil bareng kamu, 
+dari ngobrol santai sampe ketawa nggak jelas. Semoga ulang tahunmu kali ini penuh kejutan manis, kebahagiaan, dan semua hal yang bikin kamu tersenyum. 
+I will always be there for uuuuuuu.</p>
+  </section>
+
+  <section>
+    <h1 class="fade-in">Forever and Always 💫</h1>
+    <p class="fade-in">May this birthday bring you happiness, laughter, and love as endless as the sky. Kamu tuh my favorite chapter, dan aku pengen terus nulis cerita kita bareng-bareng, 
+dari hal-hal konyol sampe momen manis yang bikin kita ketawa nggak berhenti. Aku suka banget tiap ekspresi lucu kamu, apalagi pas kamu lagi nggak sadar aku liat, 
+dan tiap detik bareng kamu tuh selalu berasa special. Semoga hari ini penuh momennnn indahhh dan semua momenn lucu yang bikin kamu gemes. 
+wopyuuu sooo much, my everything!</p>
+  </section>
+
+  <script>
+    const createPetal = () => {
+      const petal = document.createElement('div');
+      petal.classList.add('petal');
+      petal.style.left = Math.random() * 100 + 'vw';
+      petal.style.animationDuration = 5 + Math.random() * 5 + 's';
+      document.body.appendChild(petal);
+      setTimeout(() => petal.remove(), 10000);
+    };
+    setInterval(createPetal, 300);
+  </script>
+</body>
+</html>
